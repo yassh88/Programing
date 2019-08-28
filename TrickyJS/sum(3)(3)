@@ -1,0 +1,21 @@
+function sum(a,b) {
+  if(a&& b){
+    return a+b;
+  }
+  else if(a && !b){
+    if(!this.tmp){
+      this.tmp = a;
+      return sum;
+    }
+    else if(this.tmp){
+      let local= this.tmp;
+      this.tmp = 0;
+      return local+a;
+    }
+  }
+}
+
+console.log(sum(10,5))
+console.log(sum(10)(3))
+console.log(sum(10,5))
+
