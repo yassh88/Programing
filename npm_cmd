@@ -1,0 +1,12 @@
+    "develop": "gatsby develop",
+
+    "develop:international": "cross-env GATSBY_BUILD_COUNTRY=INTERNATIONAL gatsby develop",
+
+    "build": "npm run clean && cross-env NODE_ENV=production gatsby build",
+
+    "build:international": "npm run clean && cross-env GATSBY_BUILD_COUNTRY=INTERNATIONAL NODE_ENV=production gatsby build",
+    
+    // npm run start --country=USA
+
+    // npm run build --country=USA
+
