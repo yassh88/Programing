@@ -5,11 +5,11 @@ var p2  = new Promise((resolve, rejected)=>{
   resolve("message 2")
 });
 var p3  = new Promise((resolve, rejected)=>{
-  resolve("message 2")
+  resolve("message 3")
 });
 
 
-Promise.race([p2,p1,p3]).then((messages)=>{
+Promise.race([p1,p2,p3]).then((messages)=>{
   console.log(messages)
 }).catch(function(reasons) {
     console.log(`Didn't get any offers...`, reasons)
